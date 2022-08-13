@@ -21,43 +21,52 @@ function Home() {
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, repudiandae perferendis tempora architecto accusantium suscipit!",
     },
     {
-      phoneName: "Google Pixels 6 pro",
-      specifications: "6GB ram, 128gb memory, 66watt fast charging",
+      phoneName: "Oneplus 10 Pro 5G",
+      specifications: "128GB/256GB/512GB storage, no card slot",
       colorVariants: "red/green/blue",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, repudiandae perferendis tempora architecto accusantium suscipit!",
     },
     {
-      phoneName: "Google Pixels 6 pro",
-      specifications: "6GB ram, 128gb memory, 66watt fast charging",
+      phoneName: "Oppo A76 black",
+      specifications:
+        "128GB storage, microSDXC,189g, 8.4mm thickness Android 11, ColorOS 11.1",
+      colorVariants: "black/blue",
+      description:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, repudiandae perferendis tempora architecto accusantium suscipit!",
+    },
+    {
+      phoneName: "Oppo Find X5 Pro",
+      specifications:
+        "Android 12, ColorOS 12, 1256GB/512GB storage, no card slot",
       colorVariants: "red/green/blue",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, repudiandae perferendis tempora architecto accusantium suscipit!",
     },
     {
-      phoneName: "Google Pixels 6 pro",
-      specifications: "6GB ram, 128gb memory, 66watt fast charging",
+      phoneName: "Samsung Galaxy S22 Ultra",
+      specifications: "Android 12, One UI 4.1, 128GB/256GB/1TB storage, no card slot",
       colorVariants: "red/green/blue",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, repudiandae perferendis tempora architecto accusantium suscipit!",
     },
     {
-      phoneName: "Google Pixels 6 pro",
-      specifications: "6GB ram, 128gb memory, 66watt fast charging",
+      phoneName: "Vivo X80 Pro",
+      specifications: "Android 12, Funtouch 12, Origin OS Ocean, 256GB/512GB storage, no card slot",
       colorVariants: "red/green/blue",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, repudiandae perferendis tempora architecto accusantium suscipit!",
     },
     {
-      phoneName: "Google Pixels 6 pro",
-      specifications: "6GB ram, 128gb memory, 66watt fast charging",
+      phoneName: "Xiaomi 11x Pro",
+      specifications: "Android 11, MIUI 12, 128GB/256GB storage, no card slot",
       colorVariants: "red/green/blue",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, repudiandae perferendis tempora architecto accusantium suscipit!",
     },
     {
-      phoneName: "Google Pixels 6 pro",
-      specifications: "6GB ram, 128gb memory, 66watt fast charging",
+      phoneName: "Xiaomi 12",
+      specifications: "Android 12, MIUI 13, 128GB/256GB storage, no card slot",
       colorVariants: "red/green/blue",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, repudiandae perferendis tempora architecto accusantium suscipit!",
@@ -71,7 +80,11 @@ function Home() {
           <div className="left-items">
             {images.map((image) => {
               return (
-                <img src={image.img2} className="small-image" alt="mobile image" />
+                <img
+                  src={image.img1}
+                  className="small-image"
+                  alt="mobile image"
+                />
               );
             })}
           </div>
