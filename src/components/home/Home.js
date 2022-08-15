@@ -10,7 +10,8 @@ import img8 from "../../assets/xiaomi-12.png";
 import { MdStarRate } from "react-icons/md";
 import "./home.css";
 
-const Home = () => {
+const Home = (props) => {
+  console.log("props", props);
   const mobilePhones = [
     {
       phoneName: "Google Pixels 6 pro",
@@ -94,13 +95,15 @@ const Home = () => {
     <div className="px-4 mt-10">
       <h4 className="text-center py-2">BUY YOUR FAV PHONE</h4>
       {mobilePhones.map((items, index) => (
-        <div className="all-items d-flex align-items-center justify-content-between">
+        <div
+          className="all-items d-flex align-items-center justify-content-between"
+          key={index + 1}
+        >
           <div className="align-items-center">
             <img
               src={items.phoneImage}
               className="small-image"
               alt="mobile image"
-              key={index}
             />
           </div>
           <div className="d-flex justify-content-between border-box px-3">
