@@ -5,9 +5,8 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import Navbar from "./components/navbar/Navbar";
 
 function App() {
-
   return (
-    <div className="App">
+    <div>
       {/* <User data={{name: 'Tanmay paul', age: 27}} /> */}
       <Navbar />
       <HomeContainer />

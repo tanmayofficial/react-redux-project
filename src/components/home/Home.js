@@ -91,11 +91,11 @@ function Home() {
   ];
 
   return (
-    <div className="px-4 m-3">
+    <div className="px-4 mt-10">
       <h4 className="text-center py-2">BUY YOUR FAV PHONE</h4>
       {mobilePhones.map((items, index) => (
-        <div className="all-items d-flex justify-content-between">
-          <div className="left-items">
+        <div className="all-items d-flex align-items-center justify-content-between">
+          <div className="align-items-center">
             <img
               src={items.phoneImage}
               className="small-image"
@@ -112,10 +112,10 @@ function Home() {
                 <small>{items.description}</small>
               </li>
             </ul>
-            <div className="text-center w-100">
+            <div className="text-center w-25">
               <strong>₹{items.price}</strong>
             </div>
-            <div className="text-center w-100">
+            <div className="text-center w-75">
               <button className="button-71">Add to Cart</button>
             </div>
           </div>
