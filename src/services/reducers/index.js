@@ -1,7 +1,8 @@
-import React from "react";
+// This is ROOT reducer to merge all reducer in one place
 
-const index = () => {
-  return <div>index</div>;
-};
+import { combineReducers } from "redux";
+import cartItems from "./reducer";
 
-export default index;
+export default combineReducers({
+  cartItems,
+});
