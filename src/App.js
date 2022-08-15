@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import Navbar from "./components/navbar/Navbar";
 
-function App() {
+const App = () => {
   return (
     <div>
       {/* <User data={{name: 'Tanmay paul', age: 27}} /> */}
@@ -12,6 +12,6 @@ function App() {
       <HomeContainer />
     </div>
   );
-}
+};
 
 export default App;

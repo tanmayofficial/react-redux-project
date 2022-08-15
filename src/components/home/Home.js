@@ -10,7 +10,7 @@ import img8 from "../../assets/xiaomi-12.png";
 import { MdStarRate } from "react-icons/md";
 import "./home.css";
 
-function Home() {
+const Home = () => {
   const mobilePhones = [
     {
       phoneName: "Google Pixels 6 pro",
@@ -123,6 +123,6 @@ function Home() {
       ))}
     </div>
   );
-}
+};
 
 export default Home;

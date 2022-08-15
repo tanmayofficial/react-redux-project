@@ -1,7 +1,7 @@
 import React from "react";
 import "./navbar.css";
 
-function Navbar() {
+const Navbar = () => {
   return (
     <nav className="navbar bg-light extra-shadow fixed-top px-4 py-3">
       <div className="container-fluid">
@@ -14,6 +14,6 @@ function Navbar() {
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;
