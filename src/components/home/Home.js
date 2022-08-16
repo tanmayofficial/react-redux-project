@@ -8,10 +8,15 @@ import img6 from "../../assets/Vivo_X80_Pro.png";
 import img7 from "../../assets/Xiaomi_11x_pro.png";
 import img8 from "../../assets/xiaomi-12.png";
 import { MdStarRate } from "react-icons/md";
+import { addToCart } from "../../services/actions/action";
+import { useDispatch } from "react-redux";
 import "./home.css";
 
 const Home = (props) => {
-  console.log("props", props);
+  const dispatch = useDispatch();
+
+  // const { price, phoneName, addToCartHandler } = props;
+  console.log("home", props);
   const mobilePhones = [
     {
       phoneName: "Google Pixels 6 pro",
@@ -97,7 +102,7 @@ const Home = (props) => {
       {mobilePhones.map((items, index) => (
         <div
           className="all-items d-flex align-items-center justify-content-between"
-          key={index + 1}
+          key={index}
         >
           <div className="align-items-center">
             <img
@@ -119,7 +124,25 @@ const Home = (props) => {
               <strong>₹{items.price}</strong>
             </div>
             <div className="text-center w-75">
-              <button className="button-71">Add to Cart</button>
+              <button
+                className="button-71"
+                onClick={() => {
+                  // props.addToCartHandler({
+                  //   price: items.price,
+                  //   phoneName: items.phoneName,
+                  // });
+
+                  dispatch(
+                    addToCart({
+                      price: items.price,
+                      phoneName: items.phoneName,
+                      colorVariants: items.colorVariants,
+                    })
+                  );
+                }}
+              >
+                Add to Cart
+              </button>
             </div>
           </div>
         </div>
