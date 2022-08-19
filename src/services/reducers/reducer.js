@@ -7,19 +7,14 @@ const initialState = {
   cartData: [],
 };
 
-const cartItems = (state = initialState, action) => {
+const cartItems = (state = [], action) => {
   switch (action.type) {
     case ADD_TO_CART:
-      console.log("reducer", action);
-      return {
-        ...state,
-        cartData: action.data,
-      };
-      break;
+      // console.log("reducer", action);
+      return [...state, { cartData: action.data }];
 
     default:
       return state;
-      break;
   }
 };
 

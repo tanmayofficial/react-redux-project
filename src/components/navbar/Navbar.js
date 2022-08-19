@@ -1,7 +1,8 @@
 import React from "react";
 import "./navbar.css";
 
-const Navbar = () => {
+const Navbar = (props) => {
+  console.log(props);
   return (
     <nav className="navbar bg-light extra-shadow fixed-top px-4 py-3">
       <div className="container-fluid">

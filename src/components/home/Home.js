@@ -7,7 +7,7 @@ import img5 from "../../assets/Samsung_Galaxy_S22_Ultra.png";
 import img6 from "../../assets/Vivo_X80_Pro.png";
 import img7 from "../../assets/Xiaomi_11x_pro.png";
 import img8 from "../../assets/xiaomi-12.png";
-import { MdStarRate } from "react-icons/md";
+// import { MdStarRate } from "react-icons/md";
 import { addToCart } from "../../services/actions/action";
 import { useDispatch } from "react-redux";
 import "./home.css";
@@ -15,8 +15,7 @@ import "./home.css";
 const Home = (props) => {
   const dispatch = useDispatch();
 
-  // const { price, phoneName, addToCartHandler } = props;
-  console.log("home", props);
+  console.log("home", props.data);
   const mobilePhones = [
     {
       phoneName: "Google Pixels 6 pro",
